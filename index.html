@@ -18,7 +18,7 @@
         }
 
         body {
-            background-color: rgb(5, 68, 119);
+            background-color: rgb(19, 5, 97);
             color: white;
             font-family: 'Poppins', sans-serif;
         }
@@ -28,7 +28,7 @@
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color: rgb(4, 85, 160);
+            background-color: rgba(9, 7, 143, 0.884);
         }
         nav ul {
             display: flex;
@@ -38,16 +38,120 @@
             list-style: none;
             margin: 0 23px;
         }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            
+            color: yellowgreen;
+            font-size: 1.03rem;
+        }
+
+        main hr{
+            border: 0;
+            background: rgb(79, 216, 44);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
         .left{
             font-size: 2rem;
         }
+
         .firstsection{
             display: flex;
             justify-content: space-around;
-            margin: 23px 0;
+            align-items: center;
+            margin: 90px 0;
         }
 
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
         
+            font-size: 2rem;
+            
+        }
+
+        .rightsection img{
+            width: 90%;
+            margin: 50px 0;
+        }
+
+        .purple{
+            color: rgb(79, 216, 44);
+        }
+
+        .text-gray{
+            color: gray;
+        }
+
+        #element{
+            color: rgb(79, 216, 44);
+        }
+
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1{
+            font-size: 2rem;
+        }
+
+        .secondsection .box{
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .image-top{
+            width: 30px;
+            position: relative;
+            top: -35px;
+            left: -15px;
+
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc{
+            top: 80px;
+            width: 150px;
+            color: gray;
+            position: relative;
+            font-size: 12px;
+
+        }
+
+        footer{
+            background-color: rgba(72, 240, 6, 0.432);
+            height: 150px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 25px 125px;
+        }
     </style>
 </head>
 
@@ -57,11 +161,12 @@
             <div class=" left">Vaidehi's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact me</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact me</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -71,14 +176,79 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                left
+                Hi, My name is <span class="purple">Vaidehi</span>
+                <div>and I am a passionate 
+                    </div>
+                    <span id="element"></span>
             </div>
             <div class="rightsection">
-                right
+                <img src="web.webp" alt="">
+
             </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>
+               Work Experience
+            </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="logodev.jpg" alt="">
+                    <div class="vertical-title">
+                        Game Developer  (July 2023 - Sep 2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, reiciendis incidunt! Dicta distinctio quaerat deserunt nisi voluptas architecto, tempore laudantium porro aliquid itaque consequatur magni pariatur, modi, est nam corporis!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="logodev.jpg" alt="">
+                    <div class="vertical-title">
+                        Django Developer  (Jan 2024 - Jun 2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, reiciendis incidunt! Dicta distinctio quaerat deserunt nisi voluptas architecto, tempore laudantium porro aliquid itaque consequatur magni pariatur, modi, est nam corporis!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="logodev.jpg" alt="">
+                    <div class="vertical-title">
+                        DevOps
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, reiciendis incidunt! Dicta distinctio quaerat deserunt nisi voluptas architecto, tempore laudantium porro aliquid itaque consequatur magni pariatur, modi, est nam corporis!
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>
+                    Vaidehi's Developer Portfolio
+                </h3>
+            </div>
+            <div class="footer-second">
+
+            </div>
+            <div class="footer-third"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Game Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+    </body>
 </body>
 
 </html>
